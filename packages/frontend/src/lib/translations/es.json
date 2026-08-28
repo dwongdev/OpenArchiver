@@ -161,7 +161,9 @@
 			"new_password": "Nueva contraseña",
 			"confirm_new_password": "Confirmar nueva contraseña",
 			"operation_successful": "Operación exitosa",
-			"passwords_do_not_match": "Las contraseñas no coinciden"
+			"passwords_do_not_match": "Las contraseñas no coinciden",
+			"email_managed_by_idp": "Gestionado por tu proveedor de identidad",
+			"password_managed_by_idp": "Gestionado por tu proveedor de identidad"
 		},
 		"system_settings": {
 			"title": "Configuración del sistema",
@@ -197,7 +199,8 @@
 			"delete_confirmation_description": "Esta acción no se puede deshacer. Esto eliminará permanentemente al usuario y eliminará sus datos de nuestros servidores.",
 			"deleting": "Eliminando",
 			"confirm": "Confirmar",
-			"cancel": "Cancelar"
+			"cancel": "Cancelar",
+			"email_managed_by_idp": "Gestionado por el proveedor de identidad"
 		},
 		"components": {
 			"charts": {

@@ -8,6 +8,7 @@ export enum OpenArchiverFeature {
 	INTEGRITY_REPORT = 'integrity-report',
 	JOURNALING = 'journaling',
 	ADVANCED_SECURITY = 'advanced-security',
+	SSO = 'sso',
 	STATUS = 'status',
 	ALL = 'all',
 }

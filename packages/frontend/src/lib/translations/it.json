@@ -133,7 +133,9 @@
 			"new_password": "Nuova password",
 			"confirm_new_password": "Conferma nuova password",
 			"operation_successful": "Operazione riuscita",
-			"passwords_do_not_match": "Le password non corrispondono"
+			"passwords_do_not_match": "Le password non corrispondono",
+			"email_managed_by_idp": "Gestito dal tuo provider di identità",
+			"password_managed_by_idp": "Gestito dal tuo provider di identità"
 		},
 		"system_settings": {
 			"title": "Impostazioni di sistema",
@@ -169,7 +171,8 @@
 			"delete_confirmation_description": "Questa azione non può essere annullata. Questo cancellerà definitivamente l'utente e rimuoverà i suoi dati dai nostri server.",
 			"deleting": "Eliminazione in corso",
 			"confirm": "Conferma",
-			"cancel": "Annulla"
+			"cancel": "Annulla",
+			"email_managed_by_idp": "Gestito dal provider di identità"
 		},
 		"components": {
 			"charts": {

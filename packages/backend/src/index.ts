@@ -13,6 +13,12 @@ export * from './config';
 export * from './jobs/queues';
 export { RetentionHook } from './hooks/RetentionHook';
 export { MfaPolicyHook, type MfaPolicyProvider } from './hooks/MfaPolicyHook';
+export { LoginPolicyHook, type LoginPolicyProvider } from './hooks/LoginPolicyHook';
+export {
+	IdentityPolicyHook,
+	type IdentityPolicyProvider,
+	type IdentityPolicySubject,
+} from './hooks/IdentityPolicyHook';
 export { MfaService, mfaService } from './services/MfaService';
 export { mfaChallengeLimiter, mfaManagementLimiter } from './api/middleware/rateLimiter';
 export { IntegrityService } from './services/IntegrityService';

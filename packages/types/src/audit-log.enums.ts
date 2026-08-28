@@ -30,6 +30,11 @@ export const AuditLogActions = [
 	'BACKUP_CODE_USED',
 	'BACKUP_CODES_REGENERATED',
 	'SECURITY_POLICY_UPDATED',
+
+	// SSO Actions
+	'SSO_LOGIN',
+	'SSO_JIT_PROVISION',
+	'SSO_CONFIG_UPDATED',
 ] as const;
 
 export const AuditLogTargetTypes = [
@@ -47,6 +52,7 @@ export const AuditLogTargetTypes = [
 	'User',
 	'File', // For uploads and downloads
 	'SecurityPolicy',
+	'SsoConnection',
 ] as const;
 
 export type AuditLogAction = (typeof AuditLogActions)[number];

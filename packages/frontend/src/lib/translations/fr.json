@@ -161,7 +161,9 @@
 			"new_password": "Nouveau mot de passe",
 			"confirm_new_password": "Confirmer le nouveau mot de passe",
 			"operation_successful": "Opération réussie",
-			"passwords_do_not_match": "Les mots de passe ne correspondent pas"
+			"passwords_do_not_match": "Les mots de passe ne correspondent pas",
+			"email_managed_by_idp": "Géré par votre fournisseur d'identité",
+			"password_managed_by_idp": "Géré par votre fournisseur d'identité"
 		},
 		"system_settings": {
 			"title": "Paramètres système",
@@ -197,7 +199,8 @@
 			"delete_confirmation_description": "Cette action est irréversible. Cela supprimera définitivement l'utilisateur et ses données de nos serveurs.",
 			"deleting": "Suppression en cours",
 			"confirm": "Confirmer",
-			"cancel": "Annuler"
+			"cancel": "Annuler",
+			"email_managed_by_idp": "Géré par le fournisseur d'identité"
 		},
 		"components": {
 			"charts": {

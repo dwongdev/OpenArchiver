@@ -8,6 +8,7 @@ import type {
 	MfaCheckResult,
 } from '@open-archiver/types';
 import { UserService } from './UserService';
+import { LoginPolicyHook } from '../hooks/LoginPolicyHook';
 import { AuditService } from './AuditService';
 import { db } from '../database';
 import * as schema from '../database/schema';
@@ -94,6 +95,26 @@ export class AuthService {
 				},
 			});
 			return null; // Invalid password
+		}
+
+		// The password is right — but is a password an acceptable way in? The
+		// enterprise SSO module can refuse it when "require single sign-on" is
+		// active. Checked only after verification, so a wrong password still reads
+		// as invalidCredentials and the policy leaks nothing to a guesser.
+		const denialReason = await LoginPolicyHook.passwordLoginDenialReason({
+			id: user.id,
+			email: user.email,
+		});
+		if (denialReason) {
+			await this.#auditService.createAuditLog({
+				actorIdentifier: user.id,
+				actionType: 'LOGIN',
+				targetType: 'User',
+				targetId: user.id,
+				actorIp: ip,
+				details: { error: 'PasswordLoginRefusedByPolicy', reason: denialReason },
+			});
+			return { denied: true, reason: denialReason };
 		}
 
 		const userRoles = await db.query.userRoles.findMany({

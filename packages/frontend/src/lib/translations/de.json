@@ -161,7 +161,9 @@
 			"new_password": "Neues Passwort",
 			"confirm_new_password": "Neues Passwort bestätigen",
 			"operation_successful": "Vorgang erfolgreich",
-			"passwords_do_not_match": "Passwörter stimmen nicht überein"
+			"passwords_do_not_match": "Passwörter stimmen nicht überein",
+			"email_managed_by_idp": "Wird von Ihrem Identitätsanbieter verwaltet",
+			"password_managed_by_idp": "Wird von Ihrem Identitätsanbieter verwaltet"
 		},
 		"system_settings": {
 			"title": "Systemeinstellungen",
@@ -197,7 +199,8 @@
 			"delete_confirmation_description": "Diese Aktion kann nicht rückgängig gemacht werden. Dadurch wird der Benutzer dauerhaft gelöscht und seine Daten von unseren Servern entfernt.",
 			"deleting": "Löschen",
 			"confirm": "Bestätigen",
-			"cancel": "Abbrechen"
+			"cancel": "Abbrechen",
+			"email_managed_by_idp": "Wird vom Identitätsanbieter verwaltet"
 		},
 		"components": {
 			"charts": {
